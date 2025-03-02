@@ -13,7 +13,7 @@ const Footer = () => {
             <img
               src="empowerImg.png"
               alt="Empowering Trust - Verifying Truth"
-              className="object-contain w-224 "
+              className="object-contain w-124 "
             />
           </div>
           <div className="w-px bg-gray-400 mx-4 mr-8" />

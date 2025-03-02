@@ -1,9 +1,29 @@
 import React from "react";
 import ApplicantDashboard from "./components/ApplicantDashboard";
 import "./index.css"; // Tailwind CSS import
+import RegisterPage from "./components/RegisterPage";
+import CredentialPage from "./components/CredentialPage";
+import RequestsPage from "./components/RequestsPage";
+import ProfileUpdatePage from "./components/ProfileUpdatePage";
+import RecordPage from "./components/RecordPage";
+import VerificationRequestPage from "./components/VerificationRequestPage";
+import VerificationRequestCheckPage from "./components/VerificationRequestCheckPage";
+import ProgressSecondPage from "./components/ProgressSecondPage";
 
 function App() {
-  return <ApplicantDashboard />;
+  return (
+    <>
+      <ApplicantDashboard />
+      <RegisterPage />
+      <CredentialPage />
+      <RequestsPage />
+      <ProfileUpdatePage />
+      <RecordPage />
+      <VerificationRequestPage />
+      <VerificationRequestCheckPage />
+      <ProgressSecondPage />
+    </>
+  );
 }
 
 export default App;
