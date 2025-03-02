@@ -1,90 +1,71 @@
 import React from "react";
-// 1) Make sure you have this image in your project, e.g. "src/assets/empower-img.png"
-// 2) Update the path below to match your actual file location/name
-
-// (Optional) If you want social icons, install react-icons: npm install react-icons
-import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-4">
-      {/* 
-        This container helps center the footer content and sets a max width 
-        so it doesn't stretch too wide on large screens 
-      */}
+    <footer className="bg-[#2B2B2B] text-white px-6 py-4">
       <div className="max-w-7xl mx-auto">
-        {/*
-          TOP SECTION:
-          - Left: "empower-img" (the graphic for EMPOWERING TRUST / VERIFYING TRUTH)
-          - Right: a set of links + vertical stack of social icons
-        */}
-        <div className="flex flex-col md:flex-row items-start justify-between">
-          {/* Left Side: The Empower Image */}
-          <div className="mb-6 md:mb-0">
+        {/* Top Row: 2 columns (50/50) */}
+        <div className="flex flex-col md:flex-row">
+          {/* LEFT COLUMN (Image) */}
+          <div className="md:w-1/2 mb-4 md:mb-0">
             <img
-              src="/empowerImg.png"
+              src="empowerImg.png"
               alt="Empowering Trust - Verifying Truth"
-              className="object-contain w-64"
-              // Adjust 'w-64' or other classes as needed to resize the image
+              className="object-contain w-224 "
             />
           </div>
+          <div className="w-px bg-gray-400 mx-4 mr-8" />
 
-          {/* Right Side: Links & Social Icons */}
-          <div className="flex items-start space-x-8 md:space-x-12">
-            {/* Vertical Links */}
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  About Authify
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Our Team
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Settings
-                </a>
-              </li>
-            </ul>
+          {/* RIGHT COLUMN (Two sections side-by-side) */}
+          <div className="md:w-1/2 flex flex-row justify-between space-x-8">
+            {/* SECTION 1 (Links) */}
+            <div className="flex flex-col space-y-2 text-sm">
+              <a href="#" className="hover:text-gray-300">
+                Terms & Conditions
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                About Authify
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                Our Team
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                Contact Us
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                Settings
+              </a>
+            </div>
+            <div className="w-px bg-gray-400 mx-4" />
 
-            {/* Social Icons (stacked vertically) */}
-            <div className="flex flex-col space-y-4">
-              <a href="#" className="hover:text-gray-300">
-                <FaInstagram size={20} />
-              </a>
-              <a href="#" className="hover:text-gray-300">
-                <FaLinkedinIn size={20} />
-              </a>
-              <a href="#" className="hover:text-gray-300">
-                <FaTwitter size={20} />
-              </a>
+            {/* SECTION 2 (Contact, Settings, Social Icons) */}
+            <div className="flex flex-col space-y-2 text-sm">
+              {/* Social Icons row */}
+              <div className="flex flex-col space-y-4 mr-16 mt-3">
+                <a href="#" className="hover:text-gray-300">
+                  <FaInstagram size={18} />
+                </a>
+                <a href="#" className="hover:text-gray-300">
+                  <FaLinkedinIn size={18} />
+                </a>
+                <a href="#" className="hover:text-gray-300">
+                  <FaXTwitter size={18} />
+                </a>
+                <a href="#" className="hover:text-gray-300">
+                  <FaFacebook size={18} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        {/*
-          BOTTOM SECTION:
-          Centered copyright
-        */}
-        <div className="text-center text-gray-500 text-sm mt-8">
+        {/* Bottom Row: Centered copyright */}
+        <div className="text-center text-gray-500 text-xs mt-3">
           © 2025. All rights are reserved.
         </div>
       </div>

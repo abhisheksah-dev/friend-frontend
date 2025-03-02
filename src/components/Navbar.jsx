@@ -2,27 +2,24 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900 p-4 flex justify-between items-center">
-      {/* Brand or Logo */}
-      <div className="text-xl font-bold">Authify</div>
-
+    <nav className="bg-black p-4 flex justify-end items-center">
       {/* Nav Links */}
-      <div className="space-x-6 hidden md:block">
-        <a href="#" className="hover:text-gray-300">
+      <div className="flex space-x-3 bg-gray-900 p-2 rounded-lg shadow-lg">
+        <button className="bg-gray-800 text-white px-4 py-2 rounded">
           Home
-        </a>
-        <a href="#" className="hover:text-gray-300">
-          Dashboard
-        </a>
-        <a href="#" className="hover:text-gray-300">
-          About Us
-        </a>
-        <a href="#" className="hover:text-gray-300">
+        </button>
+        <button className="bg-gray-700 text-white px-4 py-2 rounded">
+          Dashboard ⌄
+        </button>
+        <button className="bg-gray-800 text-white px-4 py-2 rounded">
+          About Us ⌄
+        </button>
+        <button className="bg-gray-800 text-white px-4 py-2 rounded">
           Services
-        </a>
-        <a href="#" className="hover:text-gray-300">
+        </button>
+        <button className="bg-gray-800 text-white px-4 py-2 rounded">
           FAQs
-        </a>
+        </button>
       </div>
     </nav>
   );

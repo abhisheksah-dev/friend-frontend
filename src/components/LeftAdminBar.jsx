@@ -3,7 +3,7 @@ import { FaPlus, FaClipboardList, FaBell, FaCog, FaUser } from "react-icons/fa";
 
 const LeftAdminBar = () => {
   return (
-    <aside className="w-64 bg-gray-900 p-4 text-white h-screen">
+    <aside className="w-64 bg-gray-900 p-4 text-white ">
       {/* Profile Section */}
       <div className="mb-6">
         <h2 className="text-sm text-gray-400 uppercase">MY PROFILE</h2>
