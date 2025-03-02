@@ -9,6 +9,7 @@ import RecordPage from "./components/RecordPage";
 import VerificationRequestPage from "./components/VerificationRequestPage";
 import VerificationRequestCheckPage from "./components/VerificationRequestCheckPage";
 import ProgressSecondPage from "./components/ProgressSecondPage";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <VerificationRequestPage />
       <VerificationRequestCheckPage />
       <ProgressSecondPage />
+      <HomePage />
     </>
   );
 }
